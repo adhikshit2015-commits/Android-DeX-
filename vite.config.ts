@@ -3,7 +3,11 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
 
-export default defineConfig(() => {
+export default defineConfig(() => {export default defineConfig({
+  base: '/Android-DeX/',
+  // keep any other settings that were already here
+})
+
   return {
     plugins: [react(), tailwindcss()],
     resolve: {
@@ -20,3 +24,4 @@ export default defineConfig(() => {
     },
   };
 });
+"Update base path"
