@@ -1,0 +1,6 @@
+{
+  "name": "Samsung DeX Workstation",
+  "description": "Interactive Samsung DeX workstation simulation for Galaxy Tab A7 with multi-window multitasking, One UI app drawer, Samsung Notes, My Files, browser, DeX Labs, and Quick Settings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

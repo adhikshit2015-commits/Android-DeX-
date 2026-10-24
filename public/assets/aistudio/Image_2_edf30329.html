@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error-container":"#93000a","on-primary-container":"#fbf9ff","secondary":"#cbbeff","tertiary-fixed":"#b7eaff","surface":"#10131a","surface-container-high":"#272a31","on-secondary":"#330099","inverse-primary":"#0055d4","surface-bright":"#363941","outline":"#8d90a0","secondary-container":"#4a0fce","tertiary-fixed-dim":"#4cd6ff","on-error":"#690005","on-secondary-container":"#baaaff","error":"#ffb4ab","primary-fixed-dim":"#b2c5ff","secondary-fixed-dim":"#cbbeff","inverse-surface":"#e0e2ec","on-tertiary-fixed":"#001f28","on-tertiary":"#003543","on-primary":"#002b74","background":"#10131a","tertiary":"#4cd6ff","on-secondary-fixed-variant":"#4a0fce","primary":"#b2c5ff","surface-dim":"#10131a","surface-container-highest":"#32353c","outline-variant":"#424654","surface-variant":"#32353c","tertiary-container":"#007e9b","surface-container":"#1d2027","surface-tint":"#b2c5ff","primary-fixed":"#dae2ff","secondary-fixed":"#e6deff","on-surface":"#e0e2ec","surface-container-lowest":"#0b0e15","on-background":"#e0e2ec","on-primary-fixed-variant":"#003fa3","on-tertiary-fixed-variant":"#004e60","primary-container":"#2c6bed","on-secondary-fixed":"#1d0061","surface-container-low":"#191b23","on-surface-variant":"#c3c6d7","on-primary-fixed":"#001848","inverse-on-surface":"#2d3038","on-error-container":"#ffdad6","on-tertiary-container":"#f6fcff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.25rem","space-xs":"0.25rem","space-xl":"2rem","space-sm":"0.5rem","space-md":"0.75rem","margin-dock":"0.75rem","margin":"1rem","gutter":"1rem","gutter-compact":"0.5rem"},"fontFamily":{"body-sm":["Plus Jakarta Sans"],"display-clock":["Space Grotesk"],"headline-lg":["Space Grotesk"],"body-md":["Plus Jakarta Sans"],"label-code":["JetBrains Mono"],"headline-sm":["Space Grotesk"],"display-clock-mobile":["Space Grotesk"],"headline-md":["Space Grotesk"],"body-lg":["Plus Jakarta Sans"],"label-tray":["Plus Jakarta Sans"]},"fontSize":{"body-sm":["11px",{"lineHeight":"16px","fontWeight":"400"}],"display-clock":["48px",{"lineHeight":"52px","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"34px","fontWeight":"600"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-code":["11px",{"lineHeight":"14px","fontWeight":"500"}],"headline-sm":["16px",{"lineHeight":"22px","fontWeight":"600"}],"display-clock-mobile":["32px",{"lineHeight":"36px","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"26px","fontWeight":"500"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"label-tray":["12px",{"lineHeight":"14px","fontWeight":"500"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface min-h-screen relative overflow-x-hidden selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-40 bg-surface-container-lowest/40 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.15)]"><div class="h-14 w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-xl bg-surface-container-high/60 backdrop-blur-xl"><span class="material-symbols-outlined text-primary text-[18px]">laptop_windows</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Samsung DeX</span></div><div class="h-4 w-px bg-outline-variant/30"></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-lg"><a aria-current="page" class="px-space-md py-1.5 transition-colors bg-primary-container text-on-primary-container font-headline-sm rounded-lg" data-path="dex-workstation" href="#">Workstation</a><a class="px-space-md py-1.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="app-drawer" href="#">All Apps</a><a class="px-space-md py-1.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dex-labs-settings" href="#">DeX Labs</a><a class="px-space-md py-1.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="display-multitasking" href="#">Display &amp; Snap</a></nav></div><div class="flex items-center gap-space-sm"><div class="hidden sm:flex items-center gap-space-xs bg-surface-container-high/50 px-space-md py-1.5 rounded-full"><span class="material-symbols-outlined text-primary text-[16px]">memory</span><span class="font-label-code text-label-code text-on-surface-variant">RAM 2.4/3.0 GB</span></div><button class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors"><span class="material-symbols-outlined text-[18px]">help_outline</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-14 pb-20 bg-gradient-to-b from-surface-dim via-surface to-surface-container-lowest min-h-screen relative"><div class="flex flex-col w-full relative select-none overflow-hidden min-h-[calc(100vh-3.5rem)]">
+<!-- Desktop Surface Ambient Glows (Strictly local, no global pinning) -->
+<div class="absolute inset-0 pointer-events-none overflow-hidden">
+<div class="absolute top-12 left-1/4 w-96 h-96 rounded-full bg-primary-container/10 blur-[120px]"></div>
+<div class="absolute bottom-16 right-1/3 w-80 h-80 rounded-full bg-secondary-container/15 blur-[100px]"></div>
+<div class="absolute -top-10 right-10 w-72 h-72 rounded-full bg-tertiary-container/10 blur-[90px]"></div>
+</div>
+<!-- Main Canvas Layer (Multi-window desktop space) -->
+<div class="relative w-full flex-1 p-space-lg flex flex-col justify-between">
+<!-- Top Floating Header Row: Desktop Grid vs Desktop Widget -->
+<div class="w-full flex items-start justify-between relative z-10 pointer-events-none">
+<!-- Left: Column of Desktop App Icons -->
+<div class="grid grid-cols-1 gap-y-3 pointer-events-auto w-24">
+<!-- Gallery -->
+<button class="group flex flex-col items-center justify-center p-2 rounded-xl hover:bg-surface-container-high/40 active:scale-95 transition-all text-center">
+<div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-error-container to-primary flex items-center justify-center shadow-lg shadow-black/40 group-hover:shadow-primary/20 transition-all">
+<span class="material-symbols-outlined text-white text-[24px]">photo_library</span>
+</div>
+<span class="mt-1.5 font-body-sm text-body-sm text-on-surface truncate w-20 tracking-tight drop-shadow-md">Gallery</span>
+</button>
+<!-- Samsung Notes -->
+<button class="group flex flex-col items-center justify-center p-2 rounded-xl hover:bg-surface-container-high/40 active:scale-95 transition-all text-center">
+<div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-error to-error-container flex items-center justify-center shadow-lg shadow-black/40 group-hover:shadow-error/20 transition-all">
+<span class="material-symbols-outlined text-on-error-container text-[24px]">edit_note</span>
+</div>
+<span class="mt-1.5 font-body-sm text-body-sm text-on-surface truncate w-20 tracking-tight drop-shadow-md">Notes</span>
+</button>
+<!-- My Files -->
+<button class="group flex flex-col items-center justify-center p-2 rounded-xl hover:bg-surface-container-high/40 active:scale-95 transition-all text-center">
+<div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-primary-container to-secondary flex items-center justify-center shadow-lg shadow-black/40 group-hover:shadow-primary-container/20 transition-all">
+<span class="material-symbols-outlined text-on-primary-container text-[24px]">folder</span>
+</div>
+<span class="mt-1.5 font-body-sm text-body-sm text-on-surface truncate w-20 tracking-tight drop-shadow-md">My Files</span>
+</button>
+<!-- Samsung Internet -->
+<button class="group flex flex-col items-center justify-center p-2 rounded-xl hover:bg-surface-container-high/40 active:scale-95 transition-all text-center">
+<div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-tertiary-container to-tertiary flex items-center justify-center shadow-lg shadow-black/40 group-hover:shadow-tertiary/20 transition-all">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-[24px]">public</span>
+</div>
+<span class="mt-1.5 font-body-sm text-body-sm text-on-surface truncate w-20 tracking-tight drop-shadow-md">Internet</span>
+</button>
+<!-- DeX Labs -->
+<button class="group flex flex-col items-center justify-center p-2 rounded-xl hover:bg-surface-container-high/40 active:scale-95 transition-all text-center">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-highest flex items-center justify-center shadow-lg shadow-black/40 group-hover:bg-primary-container transition-all">
+<span class="material-symbols-outlined text-primary text-[24px] group-hover:text-on-primary-container">science</span>
+</div>
+<span class="mt-1.5 font-body-sm text-body-sm text-on-surface truncate w-20 tracking-tight drop-shadow-md">DeX Labs</span>
+</button>
+<!-- YouTube -->
+<button class="group flex flex-col items-center justify-center p-2 rounded-xl hover:bg-surface-container-high/40 active:scale-95 transition-all text-center">
+<div class="w-12 h-12 rounded-2xl bg-error-container flex items-center justify-center shadow-lg shadow-black/40">
+<span class="material-symbols-outlined text-error text-[24px]">smart_display</span>
+</div>
+<span class="mt-1.5 font-body-sm text-body-sm text-on-surface truncate w-20 tracking-tight drop-shadow-md">YouTube</span>
+</button>
+<!-- Microsoft Word -->
+<button class="group flex flex-col items-center justify-center p-2 rounded-xl hover:bg-surface-container-high/40 active:scale-95 transition-all text-center">
+<div class="w-12 h-12 rounded-2xl bg-primary-container flex items-center justify-center shadow-lg shadow-black/40">
+<span class="material-symbols-outlined text-white text-[24px]">description</span>
+</div>
+<span class="mt-1.5 font-body-sm text-body-sm text-on-surface truncate w-20 tracking-tight drop-shadow-md">Word</span>
+</button>
+<!-- Recycle Bin -->
+<button class="group flex flex-col items-center justify-center p-2 rounded-xl hover:bg-surface-container-high/40 active:scale-95 transition-all text-center">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high/70 flex items-center justify-center shadow-lg shadow-black/40">
+<span class="material-symbols-outlined text-outline text-[22px]">delete</span>
+</div>
+<span class="mt-1.5 font-body-sm text-body-sm text-on-surface-variant truncate w-20 tracking-tight drop-shadow-md">Trash</span>
+</button>
+</div>
+<!-- Right: Samsung Galaxy Tab A7 Desktop Station Widget -->
+<div class="pointer-events-auto flex flex-col items-end gap-2 text-right">
+<!-- Digital Clock & Atmospheric Weather -->
+<div class="bg-surface-container-lowest/60 backdrop-blur-xl p-space-md rounded-2xl shadow-xl flex items-center gap-space-lg">
+<div class="flex flex-col text-right">
+<span class="font-display-clock text-display-clock text-primary-fixed tracking-tight">12:45</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Thursday, Oct 24 • Suwon HQ</span>
+</div>
+<div class="flex flex-col items-center justify-center pl-space-md border-l border-outline-variant/30">
+<span class="material-symbols-outlined text-tertiary text-[28px]">partly_cloudy_day</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">72°F</span>
+<span class="font-label-code text-label-code text-on-surface-variant">Optimal Air</span>
+</div>
+</div>
+<!-- Hardware Identity Tag -->
+<div class="inline-flex items-center gap-2 bg-surface-container-high/40 backdrop-blur-md px-3 py-1.5 rounded-full shadow-md">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-code text-label-code text-on-surface-variant tracking-wider uppercase">Galaxy Tab A7 (SM-T500) • Octa 2.0 GHz</span>
+</div>
+</div>
+</div>
+<!-- Multi-Window Floating Workspace Area -->
+<div class="relative w-full h-full min-h-[580px] pointer-events-none mt-4">
+<!-- Window 1 (Secondary Background Window): "My Files" (Left-Center) -->
+<div class="pointer-events-auto absolute top-4 left-32 w-[520px] h-[400px] bg-surface-container-low/85 backdrop-blur-xl rounded-2xl shadow-2xl overflow-hidden flex flex-col z-20 transition-transform duration-200 hover:scale-[1.005]">
+<!-- Window Chrome / Header -->
+<div class="h-10 px-3 bg-surface-container-highest/50 flex items-center justify-between select-none">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-lg bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container text-[14px]">folder</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface text-sm">My Files</span>
+<span class="font-label-code text-label-code text-on-surface-variant ml-2 opacity-60">/Internal/DeX_Work</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-7 h-7 rounded-lg flex items-center justify-center hover:bg-surface-container-highest text-on-surface-variant transition-colors" title="Minimize">
+<span class="material-symbols-outlined text-[15px]">remove</span>
+</button>
+<button class="w-7 h-7 rounded-lg flex items-center justify-center hover:bg-surface-container-highest text-on-surface-variant transition-colors" title="Maximize">
+<span class="material-symbols-outlined text-[14px]">crop_square</span>
+</button>
+<button class="w-7 h-7 rounded-lg flex items-center justify-center hover:bg-error-container hover:text-on-error text-on-surface-variant transition-colors" title="Close">
+<span class="material-symbols-outlined text-[15px]">close</span>
+</button>
+</div>
+</div>
+<!-- Window Toolbar -->
+<div class="h-9 px-3 bg-surface-container-high/30 flex items-center justify-between">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<button class="p-1 rounded-md hover:bg-surface-container-high text-on-surface"><span class="material-symbols-outlined text-[16px]">arrow_back</span></button>
+<button class="p-1 rounded-md hover:bg-surface-container-high text-outline"><span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+<span class="ml-2 font-medium text-on-surface">Storage</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex items-center gap-1 bg-surface-container-highest/60 rounded-full px-2.5 py-0.5">
+<span class="material-symbols-outlined text-[14px] text-outline">search</span>
+<input class="bg-transparent text-xs text-on-surface placeholder-outline focus:outline-none w-28 font-body-sm" placeholder="Search storage..." type="text"/>
+</div>
+<button class="p-1 rounded-md hover:bg-surface-container-high text-on-surface-variant"><span class="material-symbols-outlined text-[16px]">grid_view</span></button>
+</div>
+</div>
+<!-- Window Body (Split Sidebar + Content) -->
+<div class="flex-1 flex overflow-hidden">
+<!-- Sidebar -->
+<div class="w-44 bg-surface-container-lowest/60 p-2.5 flex flex-col gap-1 text-on-surface font-body-sm text-body-sm">
+<span class="px-2 py-1 text-on-surface-variant font-label-code text-[10px] uppercase font-semibold">Categories</span>
+<div class="flex items-center gap-2 px-2 py-1.5 rounded-lg bg-surface-container-high/70 text-primary font-medium">
+<span class="material-symbols-outlined text-[16px]">history</span>
+<span>Recent Files</span>
+</div>
+<div class="flex items-center gap-2 px-2 py-1.5 rounded-lg hover:bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">image</span>
+<span>Images</span>
+</div>
+<div class="flex items-center gap-2 px-2 py-1.5 rounded-lg hover:bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">description</span>
+<span>Documents</span>
+</div>
+<span class="px-2 pt-3 pb-1 text-on-surface-variant font-label-code text-[10px] uppercase font-semibold">Storage Devices</span>
+<div class="p-2 rounded-xl bg-surface-container-high/40">
+<div class="flex items-center justify-between mb-1">
+<span class="text-xs font-medium text-on-surface">Internal Storage</span>
+<span class="font-label-code text-[10px] text-tertiary">57%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 57.5%"></div>
+</div>
+<span class="block mt-1 font-label-code text-[10px] text-on-surface-variant">18.4 GB / 32 GB</span>
+</div>
+<div class="flex items-center gap-2 px-2 py-1.5 rounded-lg hover:bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">sd_card</span>
+<span>SD Card (128GB)</span>
+</div>
+<div class="flex items-center gap-2 px-2 py-1.5 rounded-lg hover:bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">cloud</span>
+<span>OneDrive</span>
+</div>
+</div>
+<!-- File Grid -->
+<div class="flex-1 p-3 bg-surface-container-low/40 overflow-y-auto grid grid-cols-3 gap-2.5 content-start">
+<!-- File Item 1 -->
+<div class="p-2 rounded-xl bg-surface-container-high/50 hover:bg-surface-container-highest cursor-pointer flex flex-col items-center text-center transition-all">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center mb-1 text-primary">
+<span class="material-symbols-outlined text-[26px]">wallpaper</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface font-medium truncate w-full">DeX_Wallpaper_4K</span>
+<span class="font-label-code text-[9px] text-outline">PNG • 3.4 MB</span>
+</div>
+<!-- File Item 2 -->
+<div class="p-2 rounded-xl bg-surface-container-high/50 hover:bg-surface-container-highest cursor-pointer flex flex-col items-center text-center transition-all">
+<div class="w-12 h-12 rounded-lg bg-secondary-container/40 flex items-center justify-center mb-1 text-secondary">
+<span class="material-symbols-outlined text-[26px]">folder_special</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface font-medium truncate w-full">Meeting_Recordings</span>
+<span class="font-label-code text-[9px] text-outline">Folder • 8 files</span>
+</div>
+<!-- File Item 3 -->
+<div class="p-2 rounded-xl bg-surface-container-high/50 hover:bg-surface-container-highest cursor-pointer flex flex-col items-center text-center transition-all">
+<div class="w-12 h-12 rounded-lg bg-tertiary-container/40 flex items-center justify-center mb-1 text-tertiary">
+<span class="material-symbols-outlined text-[26px]">table_chart</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface font-medium truncate w-full">TabA7_Bench.xlsx</span>
+<span class="font-label-code text-[9px] text-outline">Sheet • 420 KB</span>
+</div>
+<!-- File Item 4 -->
+<div class="p-2 rounded-xl bg-surface-container-high/50 hover:bg-surface-container-highest cursor-pointer flex flex-col items-center text-center transition-all">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center mb-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[26px]">camera_roll</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface font-medium truncate w-full">Camera Roll</span>
+<span class="font-label-code text-[9px] text-outline">Folder • 142 items</span>
+</div>
+<!-- File Item 5 -->
+<div class="p-2 rounded-xl bg-surface-container-high/50 hover:bg-surface-container-highest cursor-pointer flex flex-col items-center text-center transition-all">
+<div class="w-12 h-12 rounded-lg bg-error-container/30 flex items-center justify-center mb-1 text-error">
+<span class="material-symbols-outlined text-[26px]">picture_as_pdf</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface font-medium truncate w-full">Galaxy_UserGuide</span>
+<span class="font-label-code text-[9px] text-outline">PDF • 12.1 MB</span>
+</div>
+<!-- File Item 6 -->
+<div class="p-2 rounded-xl bg-surface-container-high/50 hover:bg-surface-container-highest cursor-pointer flex flex-col items-center text-center transition-all">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center mb-1 text-primary-fixed">
+<span class="material-symbols-outlined text-[26px]">code</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface font-medium truncate w-full">dex_mods.sh</span>
+<span class="font-label-code text-[9px] text-outline">Script • 8 KB</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Window 2 (Primary Active Window): "Samsung Notes" (Center-Right Focus) -->
+<div class="pointer-events-auto absolute top-12 right-8 w-[640px] h-[480px] bg-surface-container-high/95 backdrop-blur-2xl rounded-2xl shadow-[0_24px_50px_rgba(0,0,0,0.7)] flex flex-col z-30 transition-all border border-primary/30">
+<!-- Title Bar / Window Chrome -->
+<div class="h-11 px-4 bg-gradient-to-r from-surface-container-highest via-surface-container-high to-surface-container-highest flex items-center justify-between select-none">
+<div class="flex items-center gap-2.5">
+<div class="w-6 h-6 rounded-lg bg-gradient-to-br from-error to-error-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-white text-[15px]">edit_note</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface text-sm">Tab A7 Project Specs.note</span>
+<span class="bg-primary/20 text-primary font-label-code text-[10px] px-2 py-0.5 rounded-full font-medium">Active Canvas</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="w-7 h-7 rounded-lg flex items-center justify-center hover:bg-surface-container-highest text-on-surface-variant transition-colors" title="Adjust Window Opacity">
+<span class="material-symbols-outlined text-[16px]">opacity</span>
+</button>
+<button class="w-7 h-7 rounded-lg flex items-center justify-center hover:bg-surface-container-highest text-on-surface-variant transition-colors" title="Pin on Top">
+<span class="material-symbols-outlined text-[16px]">push_pin</span>
+</button>
+<div class="h-4 w-px bg-outline-variant/40 mx-0.5"></div>
+<button class="w-7 h-7 rounded-lg flex items-center justify-center hover:bg-surface-container-highest text-on-surface-variant transition-colors" title="Minimize">
+<span class="material-symbols-outlined text-[15px]">remove</span>
+</button>
+<button class="w-7 h-7 rounded-lg flex items-center justify-center hover:bg-surface-container-highest text-on-surface-variant transition-colors" title="Maximize">
+<span class="material-symbols-outlined text-[14px]">crop_square</span>
+</button>
+<button class="w-7 h-7 rounded-lg flex items-center justify-center hover:bg-error hover:text-on-error text-on-surface-variant transition-colors" title="Close">
+<span class="material-symbols-outlined text-[15px]">close</span>
+</button>
+</div>
+</div>
+<!-- Formatting & Drawing Ribbon -->
+<div class="h-10 px-4 bg-surface-container-lowest/80 flex items-center justify-between border-b border-surface-variant/40">
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1 bg-surface-container-high/60 rounded-lg p-0.5">
+<button class="p-1.5 rounded-md bg-primary-container text-on-primary-container" title="Text Mode"><span class="material-symbols-outlined text-[15px]">title</span></button>
+<button class="p-1.5 rounded-md hover:bg-surface-container-highest text-on-surface-variant" title="Pen"><span class="material-symbols-outlined text-[15px]">stylus</span></button>
+<button class="p-1.5 rounded-md hover:bg-surface-container-highest text-on-surface-variant" title="Highlighter"><span class="material-symbols-outlined text-[15px]">brush</span></button>
+<button class="p-1.5 rounded-md hover:bg-surface-container-highest text-on-surface-variant" title="Eraser"><span class="material-symbols-outlined text-[15px]">ink_eraser</span></button>
+</div>
+<div class="h-4 w-px bg-outline-variant/30"></div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<button class="p-1.5 rounded-md hover:bg-surface-container-high"><span class="material-symbols-outlined text-[16px]">format_bold</span></button>
+<button class="p-1.5 rounded-md hover:bg-surface-container-high"><span class="material-symbols-outlined text-[16px]">format_italic</span></button>
+<button class="p-1.5 rounded-md hover:bg-surface-container-high"><span class="material-symbols-outlined text-[16px]">format_list_bulleted</span></button>
+<button class="p-1.5 rounded-md hover:bg-surface-container-high"><span class="material-symbols-outlined text-[16px]">check_box</span></button>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-code text-[11px] text-tertiary">Saved 12:44 PM</span>
+<button class="px-2.5 py-1 bg-surface-container-high hover:bg-surface-container-highest rounded-lg font-body-sm text-body-sm text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">share</span>
+<span>Export</span>
+</button>
+</div>
+</div>
+<!-- Note Canvas Content -->
+<div class="flex-1 p-5 overflow-y-auto bg-surface-container-low/70 space-y-4">
+<!-- Document Header -->
+<div class="flex items-center justify-between pb-3 border-b border-surface-variant/50">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Galaxy Tab A7 (SM-T500) DeX Mode Simulation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Optimized desktop runtime profile for budget Snapdragon hardware.</p>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-container/60 text-secondary font-label-code text-label-code">Rev 2.4.2</span>
+</div>
+<!-- Specs Bento Snapshot -->
+<div class="grid grid-cols-3 gap-3">
+<div class="p-3 rounded-xl bg-surface-container-high/60">
+<span class="font-label-code text-[10px] text-on-surface-variant uppercase tracking-wider block">Processor</span>
+<span class="font-headline-sm text-headline-sm text-on-surface block mt-0.5">Snapdragon 662</span>
+<span class="font-body-sm text-body-sm text-tertiary mt-1 block">8 Cores (4x2.0 + 4x1.8 GHz)</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-high/60">
+<span class="font-label-code text-[10px] text-on-surface-variant uppercase tracking-wider block">Memory Pool</span>
+<span class="font-headline-sm text-headline-sm text-on-surface block mt-0.5">3.0 GB LPDDR4x</span>
+<span class="font-body-sm text-body-sm text-primary mt-1 block">ZRAM swap enabled (+1.5G)</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-high/60">
+<span class="font-label-code text-[10px] text-on-surface-variant uppercase tracking-wider block">Display Canvas</span>
+<span class="font-headline-sm text-headline-sm text-on-surface block mt-0.5">10.4" WUXGA+</span>
+<span class="font-body-sm text-body-sm text-secondary mt-1 block">2000 × 1200 • 224 PPI</span>
+</div>
+</div>
+<!-- Feature Optimization Status Checklist -->
+<div class="p-4 rounded-xl bg-surface-container/60 space-y-2.5">
+<span class="font-headline-sm text-headline-sm text-on-surface text-sm block">Desktop Optimization Verification</span>
+<div class="flex items-center justify-between text-body-md font-body-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span class="text-on-surface">Window edge snapping (50/50 dual view &amp; tile)</span>
+</div>
+<span class="font-label-code text-label-code text-tertiary">STABLE</span>
+</div>
+<div class="flex items-center justify-between text-body-md font-body-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span class="text-on-surface">Physical Bluetooth Keyboard &amp; Mouse cursor pointer speed</span>
+</div>
+<span class="font-label-code text-label-code text-tertiary">STABLE</span>
+</div>
+<div class="flex items-center justify-between text-body-md font-body-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span class="text-on-surface">Aggressive background process throttling (DeX Low-RAM profile)</span>
+</div>
+<span class="font-label-code text-label-code text-tertiary">ACTIVE</span>
+</div>
+<div class="flex items-center justify-between text-body-md font-body-md opacity-75">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">schedule</span>
+<span class="text-on-surface">Wireless DeX projection to Smart TV / PC client</span>
+</div>
+<span class="font-label-code text-label-code text-secondary">TESTING</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Window 3 (Compact Peek Window): "Samsung Internet" (Bottom Left Layer) -->
+<div class="pointer-events-auto absolute bottom-2 left-28 w-[440px] h-[250px] bg-surface-container-high/90 backdrop-blur-xl rounded-2xl shadow-xl overflow-hidden flex flex-col z-20">
+<!-- Title & URL bar -->
+<div class="h-9 px-3 bg-surface-container-highest/60 flex items-center justify-between">
+<div class="flex items-center gap-2 flex-1 mr-2">
+<span class="material-symbols-outlined text-tertiary text-[16px]">public</span>
+<div class="flex-1 bg-surface-container-low rounded-md px-2 py-0.5 flex items-center justify-between text-xs">
+<span class="font-label-code text-on-surface-variant truncate">https://xda-developers.com/dex-tab-a7-mod</span>
+<span class="material-symbols-outlined text-[13px] text-tertiary">lock</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-6 h-6 rounded flex items-center justify-center hover:bg-surface-container text-on-surface-variant"><span class="material-symbols-outlined text-[14px]">remove</span></button>
+<button class="w-6 h-6 rounded flex items-center justify-center hover:bg-surface-container text-on-surface-variant"><span class="material-symbols-outlined text-[13px]">crop_square</span></button>
+<button class="w-6 h-6 rounded flex items-center justify-center hover:bg-error-container hover:text-on-error text-on-surface-variant"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</div>
+</div>
+<!-- Article Preview Body -->
+<div class="p-3.5 bg-surface-container-low/50 flex-1 overflow-hidden flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded bg-tertiary-container/30 text-tertiary font-label-code text-[10px]">COMMUNITY MOD</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">4 min read</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface text-sm line-clamp-1">Running Samsung DeX on Tab A7: Workstation Optimization Guide</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-3">
+              Through targeted system UI overrides and swap partition tuning, the Galaxy Tab A7 delivers a surprisingly smooth desktop experience for multi-window productivity, cloud document editing, and keyboard navigation.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-variant/30">
+<span class="font-label-code text-[10px] text-outline">Author: @galaxy_tinkerer</span>
+<button class="font-body-sm text-body-sm text-primary hover:underline flex items-center gap-0.5">
+<span>Read article</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Floating Toast Notification (DeX Status Pill - Bottom Right) -->
+<div class="fixed bottom-16 right-4 z-40 max-w-sm pointer-events-auto">
+<div class="p-3 bg-surface-container-high/90 backdrop-blur-2xl rounded-2xl shadow-2xl flex items-center gap-3 border border-outline-variant/20 animate-fade-in">
+<div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center flex-shrink-0 text-on-primary-container shadow-md">
+<span class="material-symbols-outlined text-[20px]">speed</span>
+</div>
+<div class="flex flex-col min-w-0 pr-1">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-[13px] text-on-surface font-semibold">DeX Workstation Active</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Snapdragon 662 • 3 Active Windows • Optimal</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg hover:bg-surface-container-highest transition-colors" title="Dismiss">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+</div>
+</div></main><footer class="fixed bottom-0 left-0 right-0 z-50 h-14 bg-surface-container-lowest/80 backdrop-blur-2xl shadow-[0_-4px_24px_rgba(0,0,0,0.45)]"><div class="w-full h-full px-gutter-compact flex items-center justify-between"><div class="flex items-center gap-space-xs"><button class="w-10 h-10 rounded-xl flex items-center justify-center bg-surface-container-high/40 hover:bg-primary hover:text-on-primary text-on-surface transition-all active:scale-95" title="App Drawer"><span class="material-symbols-outlined text-[20px]">apps</span></button><div class="flex items-center gap-0.5 bg-surface-container-high/30 rounded-xl px-1 py-0.5"><button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Recent Apps"><span class="material-symbols-outlined text-[18px]">view_sidebar</span></button><button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Home"><span class="material-symbols-outlined text-[18px]">circle</span></button><button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Back"><span class="material-symbols-outlined text-[18px]">arrow_back_ios_new</span></button></div><button class="w-9 h-9 rounded-xl flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Universal Search"><span class="material-symbols-outlined text-[19px]">search</span></button></div><div class="flex items-center gap-space-sm"><button class="relative group flex flex-col items-center justify-center w-10 h-10 rounded-xl hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px] text-tertiary">public</span><span class="absolute bottom-1 w-3 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative group flex flex-col items-center justify-center w-10 h-10 rounded-xl hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px] text-primary-fixed">folder</span><span class="absolute bottom-1 w-1 h-0.5 rounded-full bg-primary"></span></button><button class="relative group flex flex-col items-center justify-center w-10 h-10 rounded-xl hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px] text-secondary">edit_note</span><span class="absolute bottom-1 w-1 h-0.5 rounded-full bg-secondary"></span></button><button class="relative group flex flex-col items-center justify-center w-10 h-10 rounded-xl hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px] text-primary">photo_library</span><span class="absolute bottom-1 w-1 h-0.5 rounded-full bg-primary"></span></button><button class="relative group flex flex-col items-center justify-center w-10 h-10 rounded-xl hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px] text-on-surface-variant">settings</span><span class="absolute bottom-1 w-1 h-0.5 rounded-full bg-outline"></span></button></div><div class="flex items-center gap-space-xs"><button class="hidden sm:flex w-8 h-8 rounded-lg items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Quick Capture"><span class="material-symbols-outlined text-[18px]">screenshot_region</span></button><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-xl bg-surface-container-high/40 hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">volume_up</span><span class="material-symbols-outlined text-[16px] text-tertiary">wifi</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">signal_cellular_alt</span><div class="flex items-center gap-0.5 text-on-surface font-label-code text-label-code"><span class="material-symbols-outlined text-[16px] text-primary">battery_charging_80</span><span>84%</span></div></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer"><div class="text-right"><div class="font-label-tray text-label-tray text-on-surface font-medium">12:45 PM</div><div class="font-body-sm text-body-sm text-on-surface-variant leading-none">Thu, Oct 24</div></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div></div></div></footer></body></html>

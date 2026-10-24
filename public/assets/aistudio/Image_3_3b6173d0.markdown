@@ -1,0 +1,211 @@
+---
+name: Galaxy DeX Slate
+colors:
+  surface: '#10131a'
+  surface-dim: '#10131a'
+  surface-bright: '#363941'
+  surface-container-lowest: '#0b0e15'
+  surface-container-low: '#191b23'
+  surface-container: '#1d2027'
+  surface-container-high: '#272a31'
+  surface-container-highest: '#32353c'
+  on-surface: '#e0e2ec'
+  on-surface-variant: '#c3c6d7'
+  inverse-surface: '#e0e2ec'
+  inverse-on-surface: '#2d3038'
+  outline: '#8d90a0'
+  outline-variant: '#424654'
+  surface-tint: '#b2c5ff'
+  primary: '#b2c5ff'
+  on-primary: '#002b74'
+  primary-container: '#2c6bed'
+  on-primary-container: '#fbf9ff'
+  inverse-primary: '#0055d4'
+  secondary: '#cbbeff'
+  on-secondary: '#330099'
+  secondary-container: '#4a0fce'
+  on-secondary-container: '#baaaff'
+  tertiary: '#4cd6ff'
+  on-tertiary: '#003543'
+  tertiary-container: '#007e9b'
+  on-tertiary-container: '#f6fcff'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#dae2ff'
+  primary-fixed-dim: '#b2c5ff'
+  on-primary-fixed: '#001848'
+  on-primary-fixed-variant: '#003fa3'
+  secondary-fixed: '#e6deff'
+  secondary-fixed-dim: '#cbbeff'
+  on-secondary-fixed: '#1d0061'
+  on-secondary-fixed-variant: '#4a0fce'
+  tertiary-fixed: '#b7eaff'
+  tertiary-fixed-dim: '#4cd6ff'
+  on-tertiary-fixed: '#001f28'
+  on-tertiary-fixed-variant: '#004e60'
+  background: '#10131a'
+  on-background: '#e0e2ec'
+  surface-variant: '#32353c'
+typography:
+  display-clock:
+    fontFamily: Space Grotesk
+    fontSize: 48px
+    fontWeight: '600'
+    lineHeight: 52px
+  display-clock-mobile:
+    fontFamily: Space Grotesk
+    fontSize: 32px
+    fontWeight: '600'
+    lineHeight: 36px
+  headline-lg:
+    fontFamily: Space Grotesk
+    fontSize: 28px
+    fontWeight: '600'
+    lineHeight: 34px
+  headline-md:
+    fontFamily: Space Grotesk
+    fontSize: 20px
+    fontWeight: '500'
+    lineHeight: 26px
+  headline-sm:
+    fontFamily: Space Grotesk
+    fontSize: 16px
+    fontWeight: '600'
+    lineHeight: 22px
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 15px
+    fontWeight: '400'
+    lineHeight: 22px
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 18px
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 11px
+    fontWeight: '400'
+    lineHeight: 16px
+  label-tray:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 14px
+  label-code:
+    fontFamily: JetBrains Mono
+    fontSize: 11px
+    fontWeight: '500'
+    lineHeight: 14px
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-compact: 0.5rem
+  margin: 1rem
+  margin-dock: 0.75rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 0.75rem
+  space-lg: 1.25rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+
+This design system translates the Samsung One UI DeX experience to tablet-class hardware, specifically calibrated for the Galaxy Tab A7 landscape workstation workflow. The aesthetic balances enterprise-grade productivity with consumer electronics sophistication.
+
+### Personality & Tone
+- **Precision Engineered:** High-tech, calibrated, deliberate. Every pixel serves ergonomics and multi-window fluid organization.
+- **Atmospheric Focus:** Dark-mode centric, deep cosmic blue-violet hues that melt into hardware bezels, reducing visual fatigue while accentuating active floating surfaces.
+- **One UI Cohesion:** Familiar squircle geometries, spacious interactive targets, and soft ambient reflections characteristic of modern One UI desktop workflows.
+
+### Design Movement
+**Glassmorphism & Tonal Layering.** The system combines subtle frosted acrylic materials (`backdrop-filter: blur(24px)`), hairline specular borders (1px semi-transparent outlines), and micro-radii to recreate the physical sensation of stacked glass screens over a hardware chassis.
+
+## Colors
+
+The palette reproduces the Samsung DeX signature twilight: dark abyssal navies, electric cobalt primaries, and soft luminescent accents.
+
+- **Primary (`#2C6BED` - Samsung Electric Cobalt):** Used for primary taskbar indicators, active window title accents, toggled quick settings, and focal action buttons.
+- **Secondary (`#7B57FF` - Nebula Violet):** Injected into wallpaper gradient meshes, secondary status badges, and contextual desktop highlights.
+- **Tertiary (`#00D1FF` - Cyan Spark):** High-visibility data indicators, network speed flashes, battery charging lightning state, and precision audio sliders.
+- **Neutral Base (`#10131A` - Cosmic Obsidian):** The foundational dark space. Window chrome surfaces sit atop this base using translucent variations (`rgba(22, 27, 38, 0.78)`), allowing wallpaper luminescence to bleed through subtly without compromising text contrast.
+- **System States:**
+  - Success: `#00C875`
+  - Warning / Battery Low: `#FFAA00`
+  - Danger / Window Close Hover: `#FF453A`
+
+## Typography
+
+Typography bridges technical precision with Samsung's clean human-centric legibility.
+
+- **Space Grotesk** serves window titles, large quick-setting panel headers, and the prominent lock/taskbar clock widgets. It offers a subtle geometric, hardware-adjacent structure.
+- **Plus Jakarta Sans** provides supreme legibility across small notification cards, multi-tasking label texts, and app titles within the DeX app drawer.
+- **JetBrains Mono** is reserved exclusively for system telemetry (RAM usage, IP configs, battery percentages, and download speed tags in quick settings).
+
+## Layout & Spacing
+
+The DeX workspace relies on a multi-plane coordinate system rather than a purely static grid.
+
+### Desktop Environment Canvas
+- **Desktop Grid:** An invisible 80px × 96px snap grid organizes desktop app shortcuts and pinned documents.
+- **Taskbar Dock:** Fixed to bottom viewport, standard height `52px`, suspended `0px` from viewport bottom edge or `8px` floating margin when docked in floating tablet mode.
+- **Multi-Window Bounds:** Freeform floating windows enforce minimum dimensions of `360px × 260px` with snapping zones triggered at viewport edges (`50%` split left/right, `100%` snap maximize).
+
+### Adaptive Breakpoints
+- **Tablet Landscape Default (Primary Mode - 1200px+):** Taskbar docks full width: Apps button on left edge, running instances in center-left, status tray on right.
+- **Tablet Portrait Fallback (< 800px):** DeX prompts desktop mode pause or shifts taskbar into dual-tier compact pill format.
+
+## Elevation & Depth
+
+Depth in this system communicates window stacking priority and system overlay tiers.
+
+### Surface Elevation Hierarchy
+- **Level 0 (Wallpaper Plane):** Deep gradient canvas with 0 blur.
+- **Level 1 (Inactive Windows):** `background: rgba(18, 22, 32, 0.72)`, backdrop filter `blur(16px)`, border `1px solid rgba(255, 255, 255, 0.06)`, shadow `0 8px 24px rgba(0, 0, 0, 0.35)`.
+- **Level 2 (Active Foreground Window):** `background: rgba(22, 28, 42, 0.86)`, backdrop filter `blur(24px)`, border `1px solid rgba(44, 107, 237, 0.45)`, shadow `0 16px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.1) inset`.
+- **Level 3 (Taskbar / Dock):** `background: rgba(12, 16, 24, 0.82)`, backdrop filter `blur(30px) saturate(180%)`, top border `1px solid rgba(255, 255, 255, 0.12)`.
+- **Level 4 (Flyout Panels / Quick Settings & App Drawer):** `background: rgba(17, 22, 33, 0.92)`, backdrop filter `blur(32px)`, border `1px solid rgba(255, 255, 255, 0.14)`, shadow `0 24px 60px rgba(0, 0, 0, 0.75)`.
+
+## Shapes
+
+The geometric identity is defined by the **Samsung One UI Squircle**.
+
+- Base roundedness level `2` (`0.5rem` / `8px`) is applied to window containers, context menus, and taskbar buttons.
+- App icons strictly utilize the Samsung squircle curve: `border-radius: 22%` with a smooth continuous curvature (`corner-smoothing: 60%`).
+- Control capsules in Quick Settings (Wi-Fi, Bluetooth, Sound) use full pill radiuses (`rounded-xl` / `9999px`) for touch-friendly toggle interactions.
+
+## Components
+
+### Window Chrome & Titlebars
+- **Header Bar:** 38px height. Active state displays subtle gradient tint matching primary brand. Inactive state shifts to muted neutral translucent dark.
+- **Window Controls (Right Aligned):**
+  - Trio arrangement: Minimize (`─`), Maximize/Restore (`□`), Close (`✕`).
+  - Hit target: `32px × 28px` with 4px border radius on hover.
+  - Close button hover: `background: #FF453A`, icon color white.
+  - Minimize & Maximize hover: `background: rgba(255, 255, 255, 0.08)`.
+
+### Translucent Taskbar & App Launcher
+- **Apps Button:** Squircle grid icon (9 dots) with 40px footprint. Hover creates circular luminescent halo (`rgba(44, 107, 237, 0.25)`).
+- **Running Apps Indicator:** Icons sit on the taskbar with a bottom glowing dot indicator (`3px × 3px` cyan pill) signifying open status, expanding to `14px × 3px` cobalt pill when active in foreground.
+- **Tray Status (Right Edge):** Clustered pill grouping containing:
+  - Input language, battery percentage + glyph, Wi-Fi signal waves, volume speaker icon, and dual-line digital clock/date.
+  - Clicking any status element expands the Quick Settings panel.
+
+### Quick Settings & Notification Drawer
+- **Grid Layout:** 3-column pill toggles (Wi-Fi, Bluetooth, Sound, DeX Labs, Night Mode, Hotspot) styled with active blue glow.
+- **Sliders:** Horizontal liquid scrubbers for brightness and volume with embedded micro-icons at leading edge.
+- **Notifications Stack:** Frosted cards separated by 6px gaps, with squircle app badges, timestamp, and quick-reply inline actions.
+
+### Buttons & Inputs
+- **Primary Action Buttons:** Squircle pill (`height: 36px`, `padding: 0 16px`), background `#2C6BED`, hover brightness `1.1`.
+- **Ghost Desktop Buttons:** Transparent background with `1px solid rgba(255, 255, 255, 0.15)`, active background `rgba(255, 255, 255, 0.08)`.
+- **Search Inputs (App Drawer):** Fully rounded pill, `background: rgba(255, 255, 255, 0.07)`, inset magnifying glass, placeholder color `rgba(255, 255, 255, 0.4)`.
